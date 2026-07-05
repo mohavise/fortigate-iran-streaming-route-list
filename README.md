@@ -136,6 +136,134 @@ end
 
 Attach the external resource to the FortiGate feature that supports domain feeds in your FortiOS version, such as DNS filter, web filter, or another security/security-profile feature.
 
+## FortiGate feed configuration manual
+
+Use this section when you want to configure the auto-refresh domain feed on FortiGate.
+
+### Step 1 — Confirm FortiGate internet and DNS
+
+FortiGate must be able to resolve and reach GitHub raw URLs.
+
+```fortios
+execute ping raw.githubusercontent.com
+```
+
+If this fails, fix FortiGate DNS, routing, policy, SSL inspection, or upstream proxy before adding the feed.
+
+### Step 2 — Create the external resource
+
+CLI:
+
+```fortios
+config system external-resource
+    edit "mohavise-iran-streaming-domains"
+        set type domain
+        set resource "https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-domains.txt"
+        set refresh-rate 1440
+    next
+end
+```
+
+GUI path may vary by FortiOS version, but the idea is:
+
+```text
+Security Fabric / External Connectors / External Resource
+        ↓
+Create New
+        ↓
+Domain List / Domain Feed
+        ↓
+Paste raw GitHub URL
+        ↓
+Set refresh interval
+```
+
+Recommended values:
+
+```text
+Name: mohavise-iran-streaming-domains
+Type: Domain List / Domain Feed
+URL:  https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-domains.txt
+Refresh: 1440 minutes
+```
+
+### Step 3 — Verify the feed downloads
+
+Check the external resource status in the GUI.
+
+If your FortiOS supports CLI diagnostics for external resources, check that the object is present and updated.
+
+```fortios
+show system external-resource
+```
+
+Expected idea:
+
+```text
+mohavise-iran-streaming-domains exists
+resource URL is correct
+refresh-rate is configured
+feed status is successful in GUI
+```
+
+### Step 4 — Attach the feed to the correct FortiGate feature
+
+The external domain feed is only useful after it is attached to a feature or profile that supports domain feeds.
+
+Common use cases:
+
+```text
+DNS Filter profile
+Web Filter profile
+Security profile / external domain resource feature
+```
+
+Then attach that profile to the correct firewall policy.
+
+Example policy idea:
+
+```text
+LAN users policy
+        ↓
+DNS/Web/Security profile using mohavise-iran-streaming-domains
+        ↓
+FortiGate checks matched streaming domains
+```
+
+### Step 5 — Test with real domains
+
+Test known entries:
+
+```text
+filimo.com
+www.filimo.com
+aparat.com
+www.aparat.com
+namava.ir
+www.namava.ir
+telewebion.com
+www.telewebion.com
+```
+
+Then check FortiGate logs for DNS filter, web filter, or policy/profile matches.
+
+### Important note about wildcard feed entries
+
+This feed contains both root and wildcard entries:
+
+```text
+filimo.com
+*.filimo.com
+```
+
+Some FortiGate features and versions may handle wildcard entries differently. If your FortiGate feature does not match wildcard feed entries as expected, use the second output file instead:
+
+```text
+fortigate-iran-streaming-address-objects.conf
+```
+
+That file creates FortiGate-native FQDN and wildcard FQDN address objects.
+
 ## Output 2 — FQDN address objects and group
 
 File:
@@ -203,6 +331,76 @@ end
 ```
 
 Adjust policy ID, interfaces, NAT, routing, service, and inspection profiles to your own FortiGate design.
+
+## Address-object import manual
+
+Use this section when you want a real FortiGate firewall address group called:
+
+```text
+GRP-IRAN-STREAMING
+```
+
+### Step 1 — Download the generated config
+
+Open this raw URL:
+
+```text
+https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-address-objects.conf
+```
+
+Copy all content.
+
+### Step 2 — Import into FortiGate CLI
+
+Paste the full config into FortiGate CLI.
+
+It will create:
+
+```text
+Root FQDN objects
+Wildcard FQDN objects
+GRP-IRAN-STREAMING address group
+```
+
+### Step 3 — Use the group in firewall policy
+
+Use the generated group as destination address:
+
+```fortios
+set dstaddr "GRP-IRAN-STREAMING"
+```
+
+Example:
+
+```fortios
+config firewall policy
+    edit 100
+        set name "Iran Streaming"
+        set srcintf "LAN"
+        set dstintf "WAN"
+        set srcaddr "all"
+        set dstaddr "GRP-IRAN-STREAMING"
+        set action accept
+        set schedule "always"
+        set service "ALL"
+        set nat enable
+    next
+end
+```
+
+### Step 4 — Verify FQDN learning
+
+Useful commands:
+
+```fortios
+diagnose firewall fqdn list
+```
+
+or depending on FortiOS version:
+
+```fortios
+diagnose firewall fqdn list-all
+```
 
 ## Which output should I use?
 
@@ -282,10 +480,11 @@ diagnose firewall fqdn list-all
 ```text
 1. Confirm FortiGate can reach raw.githubusercontent.com.
 2. For domain feed, confirm the external resource downloads successfully.
-3. For address objects, import the .conf file and confirm GRP-IRAN-STREAMING exists.
-4. Confirm client DNS traffic passes through FortiGate.
-5. Browse/test domains such as filimo.com, aparat.com, namava.ir, telewebion.com.
-6. Check FortiGate logs and FQDN object resolution.
+3. Attach the feed to the correct DNS/Web/Security profile and policy.
+4. For address objects, import the .conf file and confirm GRP-IRAN-STREAMING exists.
+5. Confirm client DNS traffic passes through FortiGate.
+6. Browse/test domains such as filimo.com, aparat.com, namava.ir, telewebion.com.
+7. Check FortiGate logs and FQDN object resolution.
 ```
 
 ## Troubleshooting
