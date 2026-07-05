@@ -31,7 +31,13 @@ if [ "$count" -lt 5 ]; then
   exit 1
 fi
 
-cp "$TMP_FILE" "$DOMAIN_FEED"
+{
+  while IFS= read -r domain; do
+    [ -z "$domain" ] && continue
+    echo "$domain"
+    echo "*.$domain"
+  done < "$TMP_FILE"
+} > "$DOMAIN_FEED"
 
 {
   echo '# managed-by=mohavise-fortigate-iran-streaming-route-list'
@@ -70,6 +76,8 @@ cp "$TMP_FILE" "$DOMAIN_FEED"
   echo 'end'
 } > "$OBJECTS_FILE"
 
-echo "domains: $count"
+feed_count="$(wc -l < "$DOMAIN_FEED" | tr -d ' ')"
+echo "source domains: $count"
+echo "feed entries: $feed_count"
 echo "domain feed: $DOMAIN_FEED"
 echo "address objects: $OBJECTS_FILE"
