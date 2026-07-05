@@ -1,15 +1,15 @@
 # FortiGate Iran Streaming Route List
 
-FortiGate-friendly domain feed for Iranian streaming, VOD, live TV, and media services.
+FortiGate-friendly outputs for Iranian streaming, VOD, live TV, and media services.
 
 ```text
 mikrotik-iran-streaming-route-list  →  fortigate-iran-streaming-route-list
-master/source repo                  →  FortiGate child/slave feed
+master/source repo                  →  FortiGate child/slave outputs
 ```
 
 ## Purpose
 
-This repository converts the shared Iranian streaming domain list from the MikroTik master repository into a clean FortiGate-friendly domain feed.
+This repository converts the shared Iranian streaming domain list from the MikroTik master repository into FortiGate-friendly outputs.
 
 Master source:
 
@@ -17,10 +17,11 @@ Master source:
 https://github.com/mohavise/mikrotik-iran-streaming-route-list
 ```
 
-Final FortiGate feed:
+Final outputs:
 
 ```text
-https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-domains.txt
+fortigate-iran-streaming-domains.txt
+fortigate-iran-streaming-address-objects.conf
 ```
 
 ## Design
@@ -31,6 +32,7 @@ This repo is intentionally compact:
 README.md
 LICENSE
 fortigate-iran-streaming-domains.txt
+fortigate-iran-streaming-address-objects.conf
 scripts/build-fortigate-iran-streaming.sh
 .github/workflows/update.yml
 ```
@@ -42,27 +44,62 @@ master iran-streaming-domains.txt
         ↓
 normalize / clean / sort
         ↓
-fortigate-iran-streaming-domains.txt
+FortiGate domain feed
+FortiGate FQDN address objects + address group
 ```
 
-## Important
+## Output 1 — External domain feed
 
-This is a **domain feed**, not an IP/CIDR feed.
+Raw URL:
 
 ```text
-Domain feed  → filimo.com, aparat.com, namava.ir
-IP feed      → 1.2.3.4, 1.2.3.0/24
+https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-domains.txt
 ```
 
-Do not mix domains and IPs in one FortiGate external resource unless your FortiOS feature explicitly supports that format.
+Use this as a FortiGate external domain resource/feed.
+
+Example:
+
+```text
+filimo.com
+aparat.com
+namava.ir
+telewebion.com
+```
+
+## Output 2 — FQDN address objects and group
+
+Raw URL:
+
+```text
+https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-address-objects.conf
+```
+
+This file creates FortiGate FQDN address objects and one address group:
+
+```text
+GRP-IRAN-STREAMING
+```
+
+For each domain, it creates two objects:
+
+```text
+IRSTR-FILIMO-COM       → filimo.com
+IRSTR-FILIMO-COM-WILD  → *.filimo.com
+```
+
+Why both?
+
+```text
+filimo.com    = root domain
+*.filimo.com  = subdomains
+```
 
 ## How to use on FortiGate
 
-### GUI
+### Method A — External domain feed
 
 Create an external domain resource/feed.
-
-Recommended values:
 
 ```text
 Name: mohavise-iran-streaming-domains
@@ -71,37 +108,90 @@ URL:  https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-
 Refresh: 1440 minutes
 ```
 
-Then attach the feed to the FortiGate feature that supports domain feeds in your design, such as DNS filtering, web filtering, or another security profile depending on FortiOS version.
+Use this for DNS filter, web filter, or other FortiGate features that support domain feeds.
 
-### CLI
+### Method B — Address objects and group
+
+Download/import this file into FortiGate CLI:
+
+```text
+https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-address-objects.conf
+```
+
+It creates:
+
+```text
+config firewall address
+    FQDN objects
+end
+
+config firewall addrgrp
+    GRP-IRAN-STREAMING
+end
+```
+
+Then you can use this group in a firewall policy:
 
 ```fortios
-config system external-resource
-    edit "mohavise-iran-streaming-domains"
-        set type domain
-        set resource "https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/main/fortigate-iran-streaming-domains.txt"
-        set refresh-rate 1440
+config firewall policy
+    edit 100
+        set name "Iran Streaming"
+        set srcintf "LAN"
+        set dstintf "WAN"
+        set srcaddr "all"
+        set dstaddr "GRP-IRAN-STREAMING"
+        set action accept
+        set schedule "always"
+        set service "ALL"
+        set nat enable
     next
 end
+```
+
+Adjust interfaces, policy ID, NAT, service, and routing to your own design.
+
+## Auto update behavior
+
+GitHub Actions updates both output files every day:
+
+```text
+fortigate-iran-streaming-domains.txt
+fortigate-iran-streaming-address-objects.conf
+```
+
+FortiGate external domain feed can refresh automatically from the raw URL.
+
+FortiGate FQDN address objects are different:
+
+```text
+Existing FQDN objects resolve/update their IPs automatically by FortiGate DNS.
+New/removed domains need the .conf file to be imported again.
+```
+
+So:
+
+```text
+Domain feed = FortiGate can auto-refresh from URL
+Address objects/group = FortiGate must import updated CLI config when domain list changes
 ```
 
 ## Test
 
 ```text
 1. Confirm FortiGate can reach raw.githubusercontent.com.
-2. Confirm the external resource downloads successfully.
-3. Attach the feed to the correct FortiGate profile/policy.
+2. For domain feed: confirm external resource downloads successfully.
+3. For address objects: import the .conf file and check GRP-IRAN-STREAMING.
 4. Test domains such as filimo.com, aparat.com, namava.ir, telewebion.com.
-5. Check FortiGate logs for matches.
+5. Check FortiGate logs and FQDN object resolution.
 ```
 
 ## Troubleshooting
 
 If the feed does not download, check FortiGate DNS, internet access, SSL inspection, upstream proxy, and access to `raw.githubusercontent.com`.
 
-If the feed downloads but does not match traffic, check that the external resource is attached to the correct profile and that the profile is applied to the correct firewall policy.
+If the address group exists but traffic does not match, check that FortiGate has resolved the FQDN objects and that the group is used in the correct firewall policy.
 
-If filtering works but routing does not, that is usually expected. Domain feeds identify names; routing is normally IP based. A future IP/CIDR feed can be added separately if reliable address sources exist.
+If filtering works but routing does not, remember that domain feeds identify names; routing is normally IP based. FQDN address objects can help, but CDN/shared IP behavior can still affect precision.
 
 ## Markers
 
@@ -113,18 +203,16 @@ project=fortigate-iran-streaming-route-list
 source=mikrotik-iran-streaming-route-list
 ```
 
-The final FortiGate feed stays plain and contains only domains.
+The domain feed stays plain and contains only domains.
 
 ## Future vision
 
-Planned direction:
-
 ```text
 1. Keep MikroTik repo as master source.
-2. Keep this repo as FortiGate domain-feed child.
-3. Add FortiGate IP/CIDR output later only if reliable sources exist.
-4. Keep all final device-facing files in repo root.
-5. Keep GitHub Actions automated and commit only when output changes.
+2. Keep this repo as FortiGate child output.
+3. Keep external domain feed for FortiGate auto-refresh.
+4. Keep FQDN object config for address group usage.
+5. Add real IP/CIDR feed only if reliable sources exist.
 ```
 
 ## License
