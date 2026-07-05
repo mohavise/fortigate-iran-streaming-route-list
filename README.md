@@ -44,8 +44,8 @@ master iran-streaming-domains.txt
         ↓
 normalize / clean / sort
         ↓
-FortiGate domain feed
-FortiGate FQDN address objects + address group
+FortiGate domain feed: root + wildcard entries
+FortiGate FQDN address objects: root + wildcard objects + group
 ```
 
 ## Output 1 — External domain feed
@@ -58,13 +58,24 @@ https://raw.githubusercontent.com/mohavise/fortigate-iran-streaming-route-list/m
 
 Use this as a FortiGate external domain resource/feed.
 
+The feed includes both the root domain and wildcard domain because root-only is not enough for services with many subdomains.
+
 Example:
 
 ```text
 filimo.com
+*.filimo.com
 aparat.com
+*.aparat.com
 namava.ir
-telewebion.com
+*.namava.ir
+```
+
+Meaning:
+
+```text
+filimo.com    = root domain
+*.filimo.com  = subdomains
 ```
 
 ## Output 2 — FQDN address objects and group
@@ -122,7 +133,8 @@ It creates:
 
 ```text
 config firewall address
-    FQDN objects
+    root FQDN objects
+    wildcard FQDN objects
 end
 
 config firewall addrgrp
@@ -203,15 +215,13 @@ project=fortigate-iran-streaming-route-list
 source=mikrotik-iran-streaming-route-list
 ```
 
-The domain feed stays plain and contains only domains.
-
 ## Future vision
 
 ```text
 1. Keep MikroTik repo as master source.
 2. Keep this repo as FortiGate child output.
-3. Keep external domain feed for FortiGate auto-refresh.
-4. Keep FQDN object config for address group usage.
+3. Keep external domain feed with root + wildcard entries.
+4. Keep FQDN object config with root + wildcard objects.
 5. Add real IP/CIDR feed only if reliable sources exist.
 ```
 
