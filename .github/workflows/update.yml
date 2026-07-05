@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build FortiGate domain feed
+      - name: Build FortiGate outputs
         run: |
           chmod +x scripts/build-fortigate-iran-streaming.sh
           ./scripts/build-fortigate-iran-streaming.sh
@@ -25,11 +25,11 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add fortigate-iran-streaming-domains.txt
+          git add fortigate-iran-streaming-domains.txt fortigate-iran-streaming-address-objects.conf
 
           if git diff --cached --quiet; then
-            echo "No FortiGate Iran streaming feed changes"
+            echo "No FortiGate Iran streaming output changes"
           else
-            git commit -m "Automatic FortiGate Iran streaming feed update"
+            git commit -m "Automatic FortiGate Iran streaming outputs update"
             git push
           fi
