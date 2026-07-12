@@ -124,6 +124,8 @@ app.tv.ir
 *.app.tv.ir
 app.tva.ir
 *.app.tva.ir
+ar.ifilmtv.ir
+*.ar.ifilmtv.ir
 as-v1.tamasha.com
 *.as-v1.tamasha.com
 as-v2.tamasha.com
@@ -246,8 +248,6 @@ bazargani.irib.ir
 *.bazargani.irib.ir
 blog.namava.ir
 *.blog.namava.ir
-blog.sabavision.com
-*.blog.sabavision.com
 cdn-live.irib.ir
 *.cdn-live.irib.ir
 cdn.anten.ir
@@ -522,6 +522,8 @@ edge.tv.ir
 *.edge.tv.ir
 edge.tva.ir
 *.edge.tva.ir
+en.ifilmtv.ir
+*.en.ifilmtv.ir
 entertainment-api.anten.ir
 *.entertainment-api.anten.ir
 event.anten.ir
@@ -562,6 +564,10 @@ event.tv.ir
 *.event.tv.ir
 event.tva.ir
 *.event.tva.ir
+fa.ifilmtv.ir
+*.fa.ifilmtv.ir
+fa2.ifilmtv.ir
+*.fa2.ifilmtv.ir
 filimo.com
 *.filimo.com
 french.irib.ir
