@@ -248,6 +248,8 @@ bazargani.irib.ir
 *.bazargani.irib.ir
 blog.namava.ir
 *.blog.namava.ir
+blog.sabavision.com
+*.blog.sabavision.com
 cdn-live.irib.ir
 *.cdn-live.irib.ir
 cdn.anten.ir
@@ -858,6 +860,8 @@ m.tv.ir
 *.m.tv.ir
 m.tva.ir
 *.m.tva.ir
+mail.anten.ir
+*.mail.anten.ir
 media.anten.ir
 *.media.anten.ir
 media.aparat.com
@@ -936,6 +940,8 @@ mobile.tv.ir
 *.mobile.tv.ir
 mobile.tva.ir
 *.mobile.tva.ir
+monazereh.anten.ir
+*.monazereh.anten.ir
 mp4.ir
 *.mp4.ir
 msx-live.namava.ir
@@ -1112,6 +1118,8 @@ s.tv.ir
 *.s.tv.ir
 s.tva.ir
 *.s.tva.ir
+s1-arvan-edge.anten.ir
+*.s1-arvan-edge.anten.ir
 s11.namasha.com
 *.s11.namasha.com
 s43.namasha.com
@@ -1392,12 +1400,16 @@ support.televika.com
 *.support.televika.com
 tamasha.com
 *.tamasha.com
+tehran01.shatel.edge.anten.ir
+*.tehran01.shatel.edge.anten.ir
 tehran16-shatel-edge.anten.ir
 *.tehran16-shatel-edge.anten.ir
 televika.com
 *.televika.com
 telewebion.com
 *.telewebion.com
+tools.anten.ir
+*.tools.anten.ir
 tv.anten.ir
 *.tv.anten.ir
 tv.aparat.com
