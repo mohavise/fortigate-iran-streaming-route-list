@@ -168,8 +168,6 @@ asset.tv.ir
 *.asset.tv.ir
 asset.tva.ir
 *.asset.tva.ir
-asset2.aparat.com
-*.asset2.aparat.com
 assets.anten.ir
 *.assets.anten.ir
 assets.aparat.com
@@ -248,8 +246,6 @@ auth.tva.ir
 *.auth.tva.ir
 bazargani.irib.ir
 *.bazargani.irib.ir
-blog.aparat.com
-*.blog.aparat.com
 blog.namava.ir
 *.blog.namava.ir
 blog.sabavision.com
@@ -262,10 +258,6 @@ cdn.aparat.com
 *.cdn.aparat.com
 cdn.aparatkids.com
 *.cdn.aparatkids.com
-cdn.asset.aparat.com
-*.cdn.asset.aparat.com
-cdn.asset2.aparat.com
-*.cdn.asset2.aparat.com
 cdn.filimo.com
 *.cdn.filimo.com
 cdn.ifilmtv.ir
@@ -456,8 +448,6 @@ dl.tva.ir
 *.dl.tva.ir
 dl8.mp4.ir
 *.dl8.mp4.ir
-docker-registry.asset.aparat.com
-*.docker-registry.asset.aparat.com
 download.anten.ir
 *.download.anten.ir
 download.aparat.com
@@ -580,8 +570,6 @@ fa.ifilmtv.ir
 *.fa.ifilmtv.ir
 fa2.ifilmtv.ir
 *.fa2.ifilmtv.ir
-fars.asset.aparat.com
-*.fars.asset.aparat.com
 filimo.com
 *.filimo.com
 french.irib.ir
@@ -624,8 +612,6 @@ gateway.tv.ir
 *.gateway.tv.ir
 gateway.tva.ir
 *.gateway.tva.ir
-help.aparat.com
-*.help.aparat.com
 ifilmtv.ir
 *.ifilmtv.ir
 image.anten.ir
@@ -744,8 +730,6 @@ img.tva.ir
 *.img.tva.ir
 imvbox.com
 *.imvbox.com
-income.aparat.com
-*.income.aparat.com
 irib.ir
 *.irib.ir
 japanese.irib.ir
@@ -754,12 +738,6 @@ job.sabaidea.com
 *.job.sabaidea.com
 lenz.ir
 *.lenz.ir
-link-s2g.aparat.com
-*.link-s2g.aparat.com
-link.aparat.com
-*.link.aparat.com
-links.emails.aparat.com
-*.links.emails.aparat.com
 live.anten.ir
 *.live.anten.ir
 live.aparat.com
@@ -842,8 +820,6 @@ log.tv.ir
 *.log.tv.ir
 log.tva.ir
 *.log.tva.ir
-logstream.aparat.com
-*.logstream.aparat.com
 ls2.mp4.ir
 *.ls2.mp4.ir
 m.anten.ir
@@ -884,8 +860,6 @@ m.tv.ir
 *.m.tv.ir
 m.tva.ir
 *.m.tva.ir
-mashhad.asset.aparat.com
-*.mashhad.asset.aparat.com
 media.anten.ir
 *.media.anten.ir
 media.aparat.com
@@ -978,8 +952,6 @@ new.imvbox.com
 *.new.imvbox.com
 norouz.namava.ir
 *.norouz.namava.ir
-npm-registry.asset.aparat.com
-*.npm-registry.asset.aparat.com
 offers.namava.ir
 *.offers.namava.ir
 paralympic.telewebion.com
@@ -1098,12 +1070,8 @@ player.tv.ir
 *.player.tv.ir
 player.tva.ir
 *.player.tva.ir
-qa.aparat.com
-*.qa.aparat.com
 r.filimo.com
 *.r.filimo.com
-rtl.asset.aparat.com
-*.rtl.asset.aparat.com
 s-cloud.irib.ir
 *.s-cloud.irib.ir
 s-v4.tamasha.com
@@ -1226,8 +1194,6 @@ static.aparat.com
 *.static.aparat.com
 static.aparatkids.com
 *.static.aparatkids.com
-static.asset.aparat.com
-*.static.asset.aparat.com
 static.cdn.asset.filimo.com
 *.static.cdn.asset.filimo.com
 static.filimo.com
@@ -1422,14 +1388,10 @@ stream.tva.ir
 *.stream.tva.ir
 streaming.imvbox.com
 *.streaming.imvbox.com
-support.aparat.com
-*.support.aparat.com
 support.aparatkids.com
 *.support.aparatkids.com
 support.televika.com
 *.support.televika.com
-tabriz.asset.aparat.com
-*.tabriz.asset.aparat.com
 tamasha.com
 *.tamasha.com
 tehran16-shatel-edge.anten.ir
