@@ -144,8 +144,8 @@ fi
     printf '        set fqdn "%s"\n' "$domain"
     echo '    next'
     printf '    edit "%s"\n' "$wild_name"
-    echo '        set type wildcard-fqdn'
-    printf '        set wildcard-fqdn "*.%s"\n' "$domain"
+    echo '        set type fqdn'
+    printf '        set fqdn "*.%s"\n' "$domain"
     echo '    next'
   done < "$TMP_DIR/domains.txt"
   echo 'end'
@@ -169,6 +169,11 @@ expected_count=$((count * 2))
 
 if (( feed_count != expected_count || object_count != expected_count || member_count != expected_count )); then
   echo "Generated-output count validation failed" >&2
+  exit 1
+fi
+
+if grep -q 'set type wildcard-fqdn\|set wildcard-fqdn' "$TMP_DIR/address-objects.conf"; then
+  echo "Unsupported wildcard address syntax detected" >&2
   exit 1
 fi
 
