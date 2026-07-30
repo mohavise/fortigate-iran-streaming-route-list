@@ -1558,8 +1558,6 @@ vod.tv.ir
 *.vod.tv.ir
 vod.tva.ir
 *.vod.tva.ir
-website-staging.imvbox.com
-*.website-staging.imvbox.com
 ws.namava.ir
 *.ws.namava.ir
 ww547.shabakema.com
@@ -1590,8 +1588,6 @@ www.namasha.com
 *.www.namasha.com
 www.namava.ir
 *.www.namava.ir
-www.new.imvbox.com
-*.www.new.imvbox.com
 www.qazvin.irib.ir
 *.www.qazvin.irib.ir
 www.sabaidea.com
