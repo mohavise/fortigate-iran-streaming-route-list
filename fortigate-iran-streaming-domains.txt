@@ -124,8 +124,6 @@ app.tv.ir
 *.app.tv.ir
 app.tva.ir
 *.app.tva.ir
-ar.ifilmtv.ir
-*.ar.ifilmtv.ir
 as-v1.tamasha.com
 *.as-v1.tamasha.com
 as-v2.tamasha.com
@@ -526,8 +524,6 @@ edge.tv.ir
 *.edge.tv.ir
 edge.tva.ir
 *.edge.tva.ir
-en.ifilmtv.ir
-*.en.ifilmtv.ir
 entertainment-api.anten.ir
 *.entertainment-api.anten.ir
 event.anten.ir
@@ -568,10 +564,6 @@ event.tv.ir
 *.event.tv.ir
 event.tva.ir
 *.event.tva.ir
-fa.ifilmtv.ir
-*.fa.ifilmtv.ir
-fa2.ifilmtv.ir
-*.fa2.ifilmtv.ir
 filimo.com
 *.filimo.com
 french.irib.ir
