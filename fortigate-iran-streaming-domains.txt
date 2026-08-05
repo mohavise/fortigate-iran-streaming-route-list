@@ -1076,6 +1076,8 @@ player.tva.ir
 *.player.tva.ir
 r.filimo.com
 *.r.filimo.com
+s-cloud.irib.ir
+*.s-cloud.irib.ir
 s-v4.tamasha.com
 *.s-v4.tamasha.com
 s.anten.ir
@@ -1184,6 +1186,8 @@ sepehr.irib.ir
 *.sepehr.irib.ir
 shabakema.com
 *.shabakema.com
+signin.irib.ir
+*.signin.irib.ir
 simacdn1.irib.ir
 *.simacdn1.irib.ir
 socket.anten.ir
