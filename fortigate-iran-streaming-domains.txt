@@ -248,8 +248,6 @@ auth.tva.ir
 *.auth.tva.ir
 bazargani.irib.ir
 *.bazargani.irib.ir
-blog.aparatkids.com
-*.blog.aparatkids.com
 blog.namava.ir
 *.blog.namava.ir
 blog.sabavision.com
@@ -262,8 +260,6 @@ cdn.aparat.com
 *.cdn.aparat.com
 cdn.aparatkids.com
 *.cdn.aparatkids.com
-cdn.asset.aparatkids.com
-*.cdn.asset.aparatkids.com
 cdn.filimo.com
 *.cdn.filimo.com
 cdn.ifilmtv.ir
@@ -414,6 +410,8 @@ chat.namava.ir
 *.chat.namava.ir
 cloob-api.anten.ir
 *.cloob-api.anten.ir
+demo.mp4.ir
+*.demo.mp4.ir
 dl.anten.ir
 *.dl.anten.ir
 dl.aparat.com
@@ -452,6 +450,8 @@ dl.tv.ir
 *.dl.tv.ir
 dl.tva.ir
 *.dl.tva.ir
+dl8.mp4.ir
+*.dl8.mp4.ir
 download.anten.ir
 *.download.anten.ir
 download.aparat.com
@@ -740,12 +740,8 @@ japanese.irib.ir
 *.japanese.irib.ir
 job.sabaidea.com
 *.job.sabaidea.com
-landing.aparatkids.com
-*.landing.aparatkids.com
 lenz.ir
 *.lenz.ir
-link-s2g.aparatkids.com
-*.link-s2g.aparatkids.com
 live.anten.ir
 *.live.anten.ir
 live.aparat.com
@@ -828,6 +824,8 @@ log.tv.ir
 *.log.tv.ir
 log.tva.ir
 *.log.tva.ir
+ls2.mp4.ir
+*.ls2.mp4.ir
 m.anten.ir
 *.m.anten.ir
 m.aparat.com
@@ -1076,6 +1074,8 @@ player.tv.ir
 *.player.tv.ir
 player.tva.ir
 *.player.tva.ir
+r.filimo.com
+*.r.filimo.com
 s-cloud.irib.ir
 *.s-cloud.irib.ir
 s-v4.tamasha.com
