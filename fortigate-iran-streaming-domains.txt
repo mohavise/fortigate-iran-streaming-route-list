@@ -1348,8 +1348,6 @@ static3.tv.ir
 *.static3.tv.ir
 static3.tva.ir
 *.static3.tva.ir
-statistics.irib.ir
-*.statistics.irib.ir
 stats.namasha.com
 *.stats.namasha.com
 stream.anten.ir
