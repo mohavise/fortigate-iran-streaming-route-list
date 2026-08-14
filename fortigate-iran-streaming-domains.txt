@@ -1,5 +1,3 @@
-abadan.irib.ir
-*.abadan.irib.ir
 account.anten.ir
 *.account.anten.ir
 account.aparat.com
@@ -82,8 +80,6 @@ api.tv.ir
 *.api.tv.ir
 api.tva.ir
 *.api.tva.ir
-api.w1.telewebion.com
-*.api.w1.telewebion.com
 api2.anten.ir
 *.api2.anten.ir
 app.anten.ir
@@ -246,14 +242,10 @@ auth.tv.ir
 *.auth.tv.ir
 auth.tva.ir
 *.auth.tva.ir
-bazargani.irib.ir
-*.bazargani.irib.ir
 blog.namava.ir
 *.blog.namava.ir
 blog.sabavision.com
 *.blog.sabavision.com
-cdn-live.irib.ir
-*.cdn-live.irib.ir
 cdn.anten.ir
 *.cdn.anten.ir
 cdn.aparat.com
@@ -576,8 +568,6 @@ fa2.ifilmtv.ir
 *.fa2.ifilmtv.ir
 filimo.com
 *.filimo.com
-french.irib.ir
-*.french.irib.ir
 gateway.anten.ir
 *.gateway.anten.ir
 gateway.aparat.com
@@ -736,8 +726,6 @@ imvbox.com
 *.imvbox.com
 irib.ir
 *.irib.ir
-japanese.irib.ir
-*.japanese.irib.ir
 job.sabaidea.com
 *.job.sabaidea.com
 lenz.ir
@@ -902,8 +890,6 @@ media.tv.ir
 *.media.tv.ir
 media.tva.ir
 *.media.tva.ir
-meeting2.irib.ir
-*.meeting2.irib.ir
 mobile.anten.ir
 *.mobile.anten.ir
 mobile.aparat.com
@@ -958,8 +944,6 @@ norouz.namava.ir
 *.norouz.namava.ir
 offers.namava.ir
 *.offers.namava.ir
-paralympic.telewebion.com
-*.paralympic.telewebion.com
 payment.anten.ir
 *.payment.anten.ir
 payment.aparat.com
@@ -1076,8 +1060,6 @@ player.tva.ir
 *.player.tva.ir
 r.filimo.com
 *.r.filimo.com
-s-cloud.irib.ir
-*.s-cloud.irib.ir
 s-v4.tamasha.com
 *.s-v4.tamasha.com
 s.anten.ir
@@ -1118,8 +1100,6 @@ s.tv.ir
 *.s.tv.ir
 s.tva.ir
 *.s.tva.ir
-s11.namasha.com
-*.s11.namasha.com
 s43.namasha.com
 *.s43.namasha.com
 s44.namasha.com
@@ -1182,14 +1162,8 @@ search.tv.ir
 *.search.tv.ir
 search.tva.ir
 *.search.tva.ir
-sepehr.irib.ir
-*.sepehr.irib.ir
 shabakema.com
 *.shabakema.com
-signin.irib.ir
-*.signin.irib.ir
-simacdn1.irib.ir
-*.simacdn1.irib.ir
 socket.anten.ir
 *.socket.anten.ir
 static.anten.ir
@@ -1572,16 +1546,12 @@ www.aparatkids.com
 *.www.aparatkids.com
 www.filimo.com
 *.www.filimo.com
-www.guilan.irib.ir
-*.www.guilan.irib.ir
 www.ifilmtv.ir
 *.www.ifilmtv.ir
 www.imvbox.com
 *.www.imvbox.com
 www.irib.ir
 *.www.irib.ir
-www.isfahan.irib.ir
-*.www.isfahan.irib.ir
 www.lenz.ir
 *.www.lenz.ir
 www.mp4.ir
@@ -1590,8 +1560,6 @@ www.namasha.com
 *.www.namasha.com
 www.namava.ir
 *.www.namava.ir
-www.qazvin.irib.ir
-*.www.qazvin.irib.ir
 www.sabaidea.com
 *.www.sabaidea.com
 www.sabavision.com
@@ -1608,7 +1576,3 @@ www.tv.ir
 *.www.tv.ir
 www.tva.ir
 *.www.tva.ir
-www.urmia.irib.ir
-*.www.urmia.irib.ir
-yasouj.irib.ir
-*.yasouj.irib.ir
