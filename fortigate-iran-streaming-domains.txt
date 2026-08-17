@@ -248,10 +248,16 @@ auth.tva.ir
 *.auth.tva.ir
 bazargani.irib.ir
 *.bazargani.irib.ir
+blog.aparat.com
+*.blog.aparat.com
+blog.filimo.com
+*.blog.filimo.com
 blog.namava.ir
 *.blog.namava.ir
 blog.sabavision.com
 *.blog.sabavision.com
+blog2.filimo.com
+*.blog2.filimo.com
 cdn-live.irib.ir
 *.cdn-live.irib.ir
 cdn.anten.ir
@@ -260,6 +266,8 @@ cdn.aparat.com
 *.cdn.aparat.com
 cdn.aparatkids.com
 *.cdn.aparatkids.com
+cdn.asset.filimo.com
+*.cdn.asset.filimo.com
 cdn.filimo.com
 *.cdn.filimo.com
 cdn.ifilmtv.ir
@@ -528,6 +536,8 @@ edge.tv.ir
 *.edge.tv.ir
 edge.tva.ir
 *.edge.tva.ir
+email.mg.filimo.com
+*.email.mg.filimo.com
 en.ifilmtv.ir
 *.en.ifilmtv.ir
 entertainment-api.anten.ir
@@ -616,6 +626,8 @@ gateway.tv.ir
 *.gateway.tv.ir
 gateway.tva.ir
 *.gateway.tva.ir
+help.filimo.com
+*.help.filimo.com
 ifilmtv.ir
 *.ifilmtv.ir
 image.anten.ir
@@ -742,6 +754,8 @@ job.sabaidea.com
 *.job.sabaidea.com
 lenz.ir
 *.lenz.ir
+link-s2g.filimo.com
+*.link-s2g.filimo.com
 live.anten.ir
 *.live.anten.ir
 live.aparat.com
@@ -1074,6 +1088,10 @@ player.tv.ir
 *.player.tv.ir
 player.tva.ir
 *.player.tva.ir
+qa.filimo.com
+*.qa.filimo.com
+quiz.filimo.com
+*.quiz.filimo.com
 r.filimo.com
 *.r.filimo.com
 s-cloud.irib.ir
@@ -1118,8 +1136,6 @@ s.tv.ir
 *.s.tv.ir
 s.tva.ir
 *.s.tva.ir
-s11.namasha.com
-*.s11.namasha.com
 s43.namasha.com
 *.s43.namasha.com
 s44.namasha.com
@@ -1186,6 +1202,8 @@ sepehr.irib.ir
 *.sepehr.irib.ir
 shabakema.com
 *.shabakema.com
+shot.filimo.com
+*.shot.filimo.com
 signin.irib.ir
 *.signin.irib.ir
 simacdn1.irib.ir
@@ -1392,6 +1410,8 @@ streaming.imvbox.com
 *.streaming.imvbox.com
 support.aparatkids.com
 *.support.aparatkids.com
+support.filimo.com
+*.support.filimo.com
 support.televika.com
 *.support.televika.com
 tamasha.com
@@ -1598,6 +1618,8 @@ www.sabavision.com
 *.www.sabavision.com
 www.shabakema.com
 *.www.shabakema.com
+www.shot.filimo.com
+*.www.shot.filimo.com
 www.tamasha.com
 *.www.tamasha.com
 www.televika.com
