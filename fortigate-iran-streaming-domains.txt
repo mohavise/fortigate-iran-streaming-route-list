@@ -250,6 +250,8 @@ bazargani.irib.ir
 *.bazargani.irib.ir
 blog.namava.ir
 *.blog.namava.ir
+blog.sabavision.com
+*.blog.sabavision.com
 cdn-live.irib.ir
 *.cdn-live.irib.ir
 cdn.anten.ir
