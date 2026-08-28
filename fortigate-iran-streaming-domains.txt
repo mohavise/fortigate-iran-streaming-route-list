@@ -748,8 +748,6 @@ live.aparat.com
 *.live.aparat.com
 live.aparatkids.com
 *.live.aparatkids.com
-live.api.anten.ir
-*.live.api.anten.ir
 live.asset.televika.com
 *.live.asset.televika.com
 live.cdn.asset.filimo.com
@@ -1392,8 +1390,6 @@ support.televika.com
 *.support.televika.com
 tamasha.com
 *.tamasha.com
-tehran16-shatel-edge.anten.ir
-*.tehran16-shatel-edge.anten.ir
 televika.com
 *.televika.com
 telewebion.com
