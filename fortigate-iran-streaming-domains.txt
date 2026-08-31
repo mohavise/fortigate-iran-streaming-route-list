@@ -248,8 +248,6 @@ auth.tva.ir
 *.auth.tva.ir
 bazargani.irib.ir
 *.bazargani.irib.ir
-blog.aparatkids.com
-*.blog.aparatkids.com
 blog.namava.ir
 *.blog.namava.ir
 blog.sabavision.com
@@ -262,8 +260,6 @@ cdn.aparat.com
 *.cdn.aparat.com
 cdn.aparatkids.com
 *.cdn.aparatkids.com
-cdn.asset.aparatkids.com
-*.cdn.asset.aparatkids.com
 cdn.filimo.com
 *.cdn.filimo.com
 cdn.ifilmtv.ir
@@ -744,12 +740,8 @@ japanese.irib.ir
 *.japanese.irib.ir
 job.sabaidea.com
 *.job.sabaidea.com
-landing.aparatkids.com
-*.landing.aparatkids.com
 lenz.ir
 *.lenz.ir
-link-s2g.aparatkids.com
-*.link-s2g.aparatkids.com
 live.anten.ir
 *.live.anten.ir
 live.aparat.com
