@@ -740,6 +740,8 @@ japanese.irib.ir
 *.japanese.irib.ir
 job.sabaidea.com
 *.job.sabaidea.com
+kids.mp4.ir
+*.kids.mp4.ir
 lenz.ir
 *.lenz.ir
 live.anten.ir
@@ -998,6 +1000,8 @@ payment.tv.ir
 *.payment.tv.ir
 payment.tva.ir
 *.payment.tva.ir
+photos.mp4.ir
+*.photos.mp4.ir
 play.anten.ir
 *.play.anten.ir
 play.aparat.com
