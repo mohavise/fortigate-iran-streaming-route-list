@@ -38,12 +38,6 @@ account.tv.ir
 *.account.tv.ir
 account.tva.ir
 *.account.tva.ir
-adc1.irib.ir
-*.adc1.irib.ir
-adc2.irib.ir
-*.adc2.irib.ir
-adc3.irib.ir
-*.adc3.irib.ir
 anten.ir
 *.anten.ir
 aparat.com
@@ -258,8 +252,6 @@ bazargani.irib.ir
 *.bazargani.irib.ir
 blog.aparat.com
 *.blog.aparat.com
-blog.aparatkids.com
-*.blog.aparatkids.com
 blog.filimo.com
 *.blog.filimo.com
 blog.namava.ir
@@ -278,8 +270,6 @@ cdn.aparatkids.com
 *.cdn.aparatkids.com
 cdn.asset.aparat.com
 *.cdn.asset.aparat.com
-cdn.asset.aparatkids.com
-*.cdn.asset.aparatkids.com
 cdn.asset.filimo.com
 *.cdn.asset.filimo.com
 cdn.asset2.aparat.com
@@ -602,8 +592,6 @@ fa.ifilmtv.ir
 *.fa.ifilmtv.ir
 fa2.ifilmtv.ir
 *.fa2.ifilmtv.ir
-fani-app.irib.ir
-*.fani-app.irib.ir
 fars.asset.aparat.com
 *.fars.asset.aparat.com
 filimo.com
@@ -768,8 +756,6 @@ img.tv.ir
 *.img.tv.ir
 img.tva.ir
 *.img.tva.ir
-imrl.arc.irib.ir
-*.imrl.arc.irib.ir
 imvbox.com
 *.imvbox.com
 income.aparat.com
@@ -782,14 +768,10 @@ job.sabaidea.com
 *.job.sabaidea.com
 kids.mp4.ir
 *.kids.mp4.ir
-landing.aparatkids.com
-*.landing.aparatkids.com
 lenz.ir
 *.lenz.ir
 link-s2g.aparat.com
 *.link-s2g.aparat.com
-link-s2g.aparatkids.com
-*.link-s2g.aparatkids.com
 link-s2g.filimo.com
 *.link-s2g.filimo.com
 link.aparat.com
@@ -1252,10 +1234,6 @@ search.tva.ir
 *.search.tva.ir
 sepehr.irib.ir
 *.sepehr.irib.ir
-sepehrapi.irib.ir
-*.sepehrapi.irib.ir
-sepehrstb.irib.ir
-*.sepehrstb.irib.ir
 shabakema.com
 *.shabakema.com
 shot.filimo.com
@@ -1466,8 +1444,6 @@ stream.tva.ir
 *.stream.tva.ir
 streaming.imvbox.com
 *.streaming.imvbox.com
-stv.irib.ir
-*.stv.irib.ir
 support.aparat.com
 *.support.aparat.com
 support.aparatkids.com
@@ -1488,8 +1464,6 @@ televika.com
 *.televika.com
 telewebion.com
 *.telewebion.com
-test.ca.irib.ir
-*.test.ca.irib.ir
 tools.anten.ir
 *.tools.anten.ir
 tv.anten.ir
@@ -1650,8 +1624,6 @@ vod.tv.ir
 *.vod.tv.ir
 vod.tva.ir
 *.vod.tva.ir
-website-staging.imvbox.com
-*.website-staging.imvbox.com
 ws.namava.ir
 *.ws.namava.ir
 ww547.shabakema.com
@@ -1682,8 +1654,6 @@ www.namasha.com
 *.www.namasha.com
 www.namava.ir
 *.www.namava.ir
-www.new.imvbox.com
-*.www.new.imvbox.com
 www.qazvin.irib.ir
 *.www.qazvin.irib.ir
 www.sabaidea.com
@@ -1706,9 +1676,5 @@ www.tva.ir
 *.www.tva.ir
 www.urmia.irib.ir
 *.www.urmia.irib.ir
-www.www3.live.irib.ir
-*.www.www3.live.irib.ir
-www3.live.irib.ir
-*.www3.live.irib.ir
 yasouj.irib.ir
 *.yasouj.irib.ir
