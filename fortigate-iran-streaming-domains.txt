@@ -1084,8 +1084,6 @@ r.filimo.com
 *.r.filimo.com
 s-cloud.irib.ir
 *.s-cloud.irib.ir
-s-v4.tamasha.com
-*.s-v4.tamasha.com
 s.anten.ir
 *.s.anten.ir
 s.aparat.com
@@ -1232,8 +1230,6 @@ static.tv.ir
 *.static.tv.ir
 static.tva.ir
 *.static.tva.ir
-static01.farakav.varzesh3.tamasha.com
-*.static01.farakav.varzesh3.tamasha.com
 static1.anten.ir
 *.static1.anten.ir
 static1.aparat.com
