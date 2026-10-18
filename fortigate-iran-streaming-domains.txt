@@ -1040,8 +1040,6 @@ player.tv.ir
 *.player.tv.ir
 player.tva.ir
 *.player.tva.ir
-plus.sabavision.com
-*.plus.sabavision.com
 s.anten.ir
 *.s.anten.ir
 s.aparat.com
