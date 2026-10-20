@@ -242,8 +242,6 @@ auth.tv.ir
 *.auth.tv.ir
 auth.tva.ir
 *.auth.tva.ir
-blog.sabavision.com
-*.blog.sabavision.com
 cdn.anten.ir
 *.cdn.anten.ir
 cdn.aparat.com
@@ -718,8 +716,6 @@ imvbox.com
 *.imvbox.com
 irib.ir
 *.irib.ir
-job.sabaidea.com
-*.job.sabaidea.com
 kids.mp4.ir
 *.kids.mp4.ir
 lenz.ir
@@ -730,8 +726,6 @@ live.aparat.com
 *.live.aparat.com
 live.aparatkids.com
 *.live.aparatkids.com
-live.cdn.asset.filimo.com
-*.live.cdn.asset.filimo.com
 live.filimo.com
 *.live.filimo.com
 live.ifilmtv.ir
@@ -1144,8 +1138,6 @@ static.aparat.com
 *.static.aparat.com
 static.aparatkids.com
 *.static.aparatkids.com
-static.cdn.asset.filimo.com
-*.static.cdn.asset.filimo.com
 static.filimo.com
 *.static.filimo.com
 static.ifilmtv.ir
