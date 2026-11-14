@@ -242,8 +242,6 @@ auth.tv.ir
 *.auth.tv.ir
 auth.tva.ir
 *.auth.tva.ir
-blog.aparatkids.com
-*.blog.aparatkids.com
 blog.sabavision.com
 *.blog.sabavision.com
 cdn.anten.ir
@@ -252,8 +250,6 @@ cdn.aparat.com
 *.cdn.aparat.com
 cdn.aparatkids.com
 *.cdn.aparatkids.com
-cdn.asset.aparatkids.com
-*.cdn.asset.aparatkids.com
 cdn.filimo.com
 *.cdn.filimo.com
 cdn.ifilmtv.ir
@@ -440,18 +436,6 @@ dl.tv.ir
 *.dl.tv.ir
 dl.tva.ir
 *.dl.tva.ir
-dl10.mp4.ir
-*.dl10.mp4.ir
-dl11.mp4.ir
-*.dl11.mp4.ir
-dl12.mp4.ir
-*.dl12.mp4.ir
-dl15.mp4.ir
-*.dl15.mp4.ir
-dl16.mp4.ir
-*.dl16.mp4.ir
-dl24.mp4.ir
-*.dl24.mp4.ir
 download.anten.ir
 *.download.anten.ir
 download.aparat.com
@@ -738,12 +722,8 @@ job.sabaidea.com
 *.job.sabaidea.com
 kids.mp4.ir
 *.kids.mp4.ir
-landing.aparatkids.com
-*.landing.aparatkids.com
 lenz.ir
 *.lenz.ir
-link-s2g.aparatkids.com
-*.link-s2g.aparatkids.com
 live.anten.ir
 *.live.anten.ir
 live.aparat.com
@@ -860,8 +840,6 @@ m.tv.ir
 *.m.tv.ir
 m.tva.ir
 *.m.tva.ir
-mail.mp4.ir
-*.mail.mp4.ir
 media.anten.ir
 *.media.anten.ir
 media.aparat.com
@@ -1356,8 +1334,6 @@ stream.tva.ir
 *.stream.tva.ir
 streaming.imvbox.com
 *.streaming.imvbox.com
-support.aparatkids.com
-*.support.aparatkids.com
 tamasha.com
 *.tamasha.com
 televika.com
@@ -1520,8 +1496,6 @@ vod.tv.ir
 *.vod.tv.ir
 vod.tva.ir
 *.vod.tva.ir
-website-staging.imvbox.com
-*.website-staging.imvbox.com
 worldservice.irib.ir
 *.worldservice.irib.ir
 www.anten.ir
@@ -1546,8 +1520,6 @@ www.namasha.com
 *.www.namasha.com
 www.namava.ir
 *.www.namava.ir
-www.new.imvbox.com
-*.www.new.imvbox.com
 www.sabaidea.com
 *.www.sabaidea.com
 www.sabavision.com
